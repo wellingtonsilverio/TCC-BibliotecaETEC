@@ -1,0 +1,42 @@
+
+﻿<?php
+include('include/livro.class.php');
+$livro = new Livro;
+?>
+<style type="text/css">
+#faixaTitulo{
+	margin-left:10px;
+	margin-right:10px;
+	background-color:rgba(255, 51, 51, 0.7);
+}
+#faixaTitulo h1{
+	padding:10px;
+	padding-left:0px;
+}
+#star img{
+	width:11px;
+	margin:1px;
+}
+</style>
+<div id="faixaTitulo"><h1 id="tituPag"><?php
+if(isset($_GET['search'])){
+	echo '<img src="imgs/livro22.png">RESULTADOS';
+}else{
+	echo '<img src="imgs/novidade.png">NOVIDADES';
+}
+?>
+</h1></div>
+    <?php 
+	if(isset($_GET['search'])){
+		$getPesq = $_GET['search'];
+		$sqlCommand = $livro->selectPescLivro($banco);
+		$sqlCommand->execute(array('%'.$getPesq.'%','%'.$getPesq.'%','%'.$getPesq.'%','%'.$getPesq.'%'));
+	}else{
+		$sqlCommand = $livro->selectLivro($banco);
+		$sqlCommand->execute();
+	}
+	while($verNoticia = $sqlCommand->fetch(PDO::FETCH_NUM)){
+		echo $livro->getLivro($banco, $verNoticia);
+	}
+	?>
+

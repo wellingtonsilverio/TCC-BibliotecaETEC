@@ -1,0 +1,2 @@
+<a href="<?php if(isset($_GET['l'])){ echo 'index.php?l='.($_GET['l']+12); } else { echo 'index.php?l=12'; } ?>"><div id="btnProximo">Livros mais antigos.</div></a>
+<br /><br /><br />

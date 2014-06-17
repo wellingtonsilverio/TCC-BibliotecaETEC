@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="The portfolio of ExtendsD&amp;C."> 
+	<meta name="keywords" content="portfolio, extends, parallax "> 
+	<meta name="author" content="EXTENDSDEC">
+	<meta name="ROBOTS" content="INDEX,FOLLOW"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+  
+	<title>Extends</title>
+    <link rel="stylesheet" type="text/css" href="padrao.css" />
+    
+    <!-- Pelicula do Servisos -->
+    <script language="javascript" type="text/javascript">
+		function pelicula(){
+			$('#thumbnails_grid li').append("<div>Oi</div>");
+		}
+	</script>
+    
+    
+    <script src="jquery.min.js"></script>
+<script src="responsiveslides.min.js"></script>
+<script language="javascript" type="text/javascript">
+  $(function() {
+    $(".rslides").responsiveSlides({
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 500,            // Integer: Speed of the transition, in milliseconds
+  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+  pager: false,           // Boolean: Show pager, true or false
+  nav: true,             // Boolean: Show navigation, true or false
+  random: false,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+  prevText: "<img src='left-arrow-slide.png' style='position:relative; opacity:0.5; float:left; margin-top:-60px; margin-left:0px; z-index:888;' />",   // String: Text for the "previous" button
+  nextText: "<img src='right-arrow-slide.png' style='position:relative; opacity:0.5; float: right; margin-top:-60px; margin-right:0px; z-index:888;' />",       // String: Text for the "next" button
+  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+  manualControls: "",     // Selector: Declare custom pager navigation
+  namespace: "rslides",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});
+	    $('div.bgParallax').each(function(){
+    var $obj = $(this);
+     
+    $(window).scroll(function() {
+    var yPos = -($(window).scrollTop() / $obj.data('speed'));
+     
+    var bgpos = '50% '+ yPos + 'px';
+     
+    $obj.css('background-position', bgpos );
+     
+    });
+    });
+  });
+</script>
+
+	<title>Portifolio</title>
+	 <link rel="stylesheet" type="text/css" href="padrao.css" />
+<script type="text/javascript">
+jQuery(document).ready(function($) { 
+    $(".scroll").click(function(event){        
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+   });
+});
+</script>
+</head>
+
+<body>
+<div id="topo" style="height: 120px;"><img src="logo.png" style="margin:10px; margin-left:5%; height: 100px;" title="Logo ExtendsD&C"><div id="menu" style="margin-top:30px;"><a href="#slide" class="scroll">Home</a> <a href="#desc" class="scroll">Sobre</a> <a href="#port" class="scroll">Portifolio</a> <a href="#contato" class="scroll">Contato</a></div></div>
+
+	<div id="slide" style="padding-top:60px;">
+      <ul class="rslides">
+          <li><img src="imagens/1.png" style="padding-top:60px;"alt=""></li>
+          <li><img src="imagens/2.png" style="padding-top:60px;"alt=""></li>
+          <li><img src="imagens/3.png" style="padding-top:60px;"alt=""></li>
+
+		</ul>
+    </div>
+    
+    <div id="desc">
+<h1>ExtendsD&amp;C</h1>
+<p><br>
+  Somos um grupo formado por membros do II3(Informatica para internet, Terceiro modulo), com o objetivo de criar um TCC para ajudar os alunos da ETEC Hortolandia, assim associamos a biblioteca em nosso projeto, criando a Biblioteca ETEC.</p>
+<p>O grupo e formado por Carolina Lima Nascimento, Emerson, Hemily e Wellington Abilio Alves Silverio, tendo como orientador de Trabalho de Conclusao de curso a Pricila e como orientador de curso o  Rafael.</p>
+  </div>  
+  <table border="0" cellspacing="0" cellpadding="20px" align="center">
+  <tr>
+    <td> <img src="imagens/desc.png"><div class="servicos">Os melhores estão aqui:</div>
+    <div class="servicos1">Preparamos o melhor do TCC, combinando Mobilidade, Agilidade e Facilidade.<br /><br /><br /></div></td>
+    <td><img src="imagens/desc2.png">
+    <div class="servicos">Confira nosso produto:</div>
+    <div class="servicos1">Utilizamos as linguagem C#, PHP e Javascript, Banco de dados (MySQL).<br /><br /><br /><br /></div></td>
+    <td><img src="imagens/desc.png"><div class="servicos">Sua empresa na internet:</div>
+    <div class="servicos1">Agora o site da Biblioteca ETEC esta online, assim voce pode empresta livros diretamente do website.<br /><br /><br /></div>
+    <td><img src="imagens/desc2.png">
+    <div class="servicos">Mensagem da Equipe:</div>
+    <div class="servicos1">Agradecemos a todos que ajudaram  nosso projeto, a todas as bibliotecarias que forneceram funcionalidades necessarias, ao alunos e professores que responderam aos questionarios.</div></td>
+  </tr>
+</table>
+<div id="port"></div>
+<iframe src="projeto.html" width="100%" height="1150" frameborder="0" scrolling="no"></iframe> 
+<br />       
+<div id="contato">
+       <h1>ENTRE EM CONTATO<br> AGORA E FAÇA SEU <br>
+       ORÇAMENTO!</h1>
+       <form method="post" id="contato">
+           <input type="text" id="nome" name="nome" placeholder="seu nome" /><br />
+           <input type="text" id="email" name="email" placeholder="seu e-mail de contato" /><br />
+           <textarea id="texto" name="texto"></textarea>
+           <input type="submit" value="Enviar Mensagem" />
+       </form>
+</div>
+       
+      
+
+            
+<footer class="footer">
+
+</div>
+
+</body>
+</html>

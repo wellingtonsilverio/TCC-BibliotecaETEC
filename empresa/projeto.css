@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#desc{
+	padding-top: 60px;
+	margin:0px 70px 0px 70px;
+	font-family:Century Gothic;
+	text-align:justify;
+	font-size:20px;
+	}
+#desc h1{
+	color:#14a6dc;
+	font-size:36px;
+	margin-bottom: -8px;
+	background: url(imagens/section-top-bg.png) repeat-x  bottom;}

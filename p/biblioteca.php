@@ -1,0 +1,16 @@
+<style type="text/css">
+#faixaTitulo{
+	margin-left:10px;
+	margin-right:10px;
+	background-color:rgba(255, 51, 51, 0.7);
+}
+#faixaTitulo h1{
+	padding:10px;
+	padding-left:0px;
+}
+</style>
+<div id="faixaTitulo"><h1 id="tituPag"><img src="imgs/livro.png">A BIBLIOTECA</h1></div>
+<img src="imgs/biblioteca.jpg" style="margin:10px; float:left;"><br />A biblioteca da ETEC Hortolândia, possui 3681 títulos, 10719 exemplares e a assinatura das revistas Veja e Info, possui também a assinatura dos jornais: Folha de São Paulo e Correio Popular. 
+No sistema atualmente a cadastrado 581 alunos e 52 professores. A biblioteca oferece aos seus usuários internet e um espaço para realizar seus estudos, aproximadamente 320 atendimentos são realizados diariamente.
+
+O acervo é fruto de aquisições realizadas pelo Centro Paula Souza, APM e também de doações da comunidade. <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

@@ -1,0 +1,268 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+	font-family:Arial;
+	background:url("../bg.png") repeat;
+}
+/* Esrutura Index */
+#topper{
+	position:fixed;
+	width:100%;
+	top:0;
+	height:120px;
+	background-color:#AA0000;
+	opacity:0.7;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(23, 23, 23, 0.71);
+	-moz-box-shadow:    0px 1px 5px 0px rgba(23, 23, 23, 0.71);
+	box-shadow:         0px 1px 5px 0px rgba(23, 23, 23, 0.71);
+	z-index:2;
+}
+#topperDiv{
+	position:fixed;
+	width:1000px;
+	left:50%;
+	margin-left:-500px;
+	z-index:3;
+	margin-top:-10px;
+}
+#menu-t a{
+	margin:15px;
+}
+#menu-t{
+	height:120px;
+	line-height:120px;
+	font-size:18px;
+	text-align:center;
+}
+
+#conteudo{
+	width:1020px;
+	margin:0 auto;
+	margin-top:10px;
+	padding-top:150px;
+	padding-bottom:40px;
+}
+#contLivro{
+	width:240px;
+	height:300px;
+	background:#000;
+	margin:10px;
+	margin-right:0;
+	margin-bottom:0;
+	display:inline-table;
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(23, 23, 23, 0.35);
+	-moz-box-shadow:    0px 0px 4px 0px rgba(23, 23, 23, 0.35);
+	box-shadow:         0px 0px 4px 0px rgba(23, 23, 23, 0.35);
+}
+
+#contLivro:hover{
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(23, 23, 23, 0.45);
+	-moz-box-shadow:    0px 0px 8px 0px rgba(23, 23, 23, 0.45);
+	box-shadow:         0px 0px 8px 0px rgba(23, 23, 23, 0.45);
+	z-index:1;
+}
+
+#footer{
+	height:40px;
+	background-color:#AA0000;
+}
+#pelicula{
+	position:absolute;
+	width:240px;
+	height:303px;
+	margin-top:-50px;
+}
+#pelicula:hover{
+	transition:all 0.5s;
+	background-color:#AA1E23;
+	background-image:url(link.ico);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:50px;
+	opacity:0.4;
+	cursor:pointer;
+}
+#contLivDesc{
+	position:relative;
+	top:255px;
+	height:45px;
+	background-color:#45515C;
+	opacity:0.8;
+	color:#FFF;
+}
+#menu{
+	margin:0 auto;
+	text-align:center;
+	color:#FFF;
+	font-weight:bold;
+	position:fixed;
+	margin-left:35%;
+	z-index:3;
+}
+#menu a:hover{
+	border-bottom:4px solid #000;
+}
+#menu a{
+	margin-left:15px;
+	margin-right:15px;
+	cursor:pointer;
+}
+
+.fluDiv{
+	height:90px;
+	width:100px;
+	background-color:#45515C;
+	position:fixed; 
+	top:20%;
+	right:0;
+	opacity:0.8;
+	z-index:3;
+}
+#flutuante img{
+	width:80px;
+	margin-top:5px;
+	margin-left:10px;
+	position:relative;
+	float:left;
+}
+#flutuante div input{
+	border-radius:3px;
+	border:none;
+	margin:2px;
+	width:200px;
+	z-index:4;
+	padding:8px;
+}
+a{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+#sug input, textarea{
+	width:930px;
+	display:block;
+	margin:8px;
+	border:none;
+	padding:10px;
+	border-radius:6px;
+	box-shadow:0 0 2px #1E1E1E;
+}
+#sug #btn{
+	background-color:#000055;
+	color:#FFFFFF;
+	font-weight:bold;
+	width:950px;
+}
+#sug textarea{
+	height:350px;
+}
+#paiIco{
+	width:100px;
+	height:53px;
+	text-align:center;
+	display:inline-block;
+	font-size:11px;
+}
+#paiIco img{
+	width:30px;
+	float:none;
+	display:block;
+	margin:0 auto;
+	margin-bottom:3px;
+}
+#tituPag{
+	margin-left:40px;
+}
+#footerdiv{
+	height:40px;
+	line-height:40px;
+}
+#linkCE{
+	padding-left:20px;
+	background-image:url(../imgs/ico_livro.png);
+	background-position:left;
+	background-repeat:no-repeat;
+	background-size:15px;
+}
+#menu-t a:hover{
+	border-bottom:4px solid #FFF;
+}
+#fluLog{ height:110px; }
+#fluPesq{
+	margin-top:112px;
+}
+#fluCat{
+	margin-top:204px;
+}
+#fluLiv{
+	margin-top:296px;
+}
+#flutuante div input[type=submit]{
+	height:27px; width:200px; background:#000055; padding:3px; color:#fff;
+}
+#topperDiv img{ height:100px; float:left; }
+#contLivDesc h1{
+	text-align:center; font-weight:bold; font-size:20px;
+	margin:0;
+	padding:0;
+	padding-top:3px;
+	line-height:20px;
+}
+#fluPesq input[type=text]{
+	height:80px; margin:5px; font-size:36px;
+}
+.fluDiv div div a{
+	color:#000000;
+}
+#faixaTitulo{
+	margin-left:10px;
+	margin-right:10px;
+	background-color:#AA1E23;
+}
+#faixaTitulo h1{
+	padding:10px;
+	padding-left:0px;
+}
+@media all and (max-width: 970px){
+	#topperDiv{	width:780px; margin-left:-380px; text-align:center;}
+	#menu-t{ font-size:11px; }
+	#conteudo{ width:800px; }
+	#search{ height:57px; }
+	.fluDiv{ top:1%; }
+}
+@media all and (max-width: 768px) {
+	#topperDiv{	width:760px; margin-left:-380px; text-align:center;}
+	#topperDiv img{ display:block; height:80px; margin-bottom:10px; float:right; margin-right:300px;}
+	#menu-t{ font-size:12px; height:10px; line-height:10px; width:760px; float:left;}
+	.fluDiv{ height: 65px; top:5%; }
+	#fluLog{ height:75px; }
+	#fluLog img{ height: 50px; width:55px; margin-left:5px; }
+	#fluPesq img{ height: 50px; width:60px; }
+	#fluCat img{ height: 50px; width:60px; }
+	#fluLiv img{ height: 50px; width:60px; }
+	#fluPesq{ margin-top:85px; }
+	#fluCat{ margin-top:160px; }
+	#fluLiv{ margin-top:230px; }
+	#flutuante div input[type=text], #flutuante div input[type=password]{ height:10px; font-size:10px; margin:1px; }
+	#flutuante div input[type=submit]{ height:25px;}
+	#conteudo{ width:530px; }
+	#fluPesq div input[type=text]{ height:57px;  }
+	#fluCat{ font-size:14px; }
+	#fluLiv div{ font-size:12px; margin-bottom:7px; }
+}
+#faixaTitulo img{
+	height:35px;
+	margin-right:10px;
+	margin-bottom:-5px;
+}
+#btnProximo{
+	padding:10px;
+	margin:10px;
+	margin-right:8px;
+	color:#FFF;
+	background:#000055;
+	width:20%;
+	text-align:center;
+	float:right;
+}
